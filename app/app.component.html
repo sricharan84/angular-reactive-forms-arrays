@@ -21,7 +21,7 @@
             </thead>
             <tbody>
               <tr
-              *ngFor="let student of students.controls | filterOutRemoved; let i = index; let f=first;let l=last"
+              *ngFor="let student of students.controls; let i = index; let f=first;let l=last"
               [formGroup]="student"
             >
             <td> {{i}}</td>
